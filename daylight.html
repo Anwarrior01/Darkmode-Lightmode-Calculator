@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date</title>
+  </head>
+  <body>
+    <h1>DayLight</h1>
+
+    <form action="">
+      <div class="container">
+        <label for="day" class="lbl">Day : </label>
+        <input type="number" id="day" maxlength="2" max="31" min="1" />
+
+        <label for="month" class="lbl">Month : </label>
+        <select name="month" id="month">
+          <option value="1" id="1">Janvier</option>
+          <option value="2">Fevrier</option>
+          <option value="3">Mars</option>
+          <option value="4">Avril</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">Aout</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+
+        <label for="date" class="lbl">Year : </label>
+        <input
+          type="number"
+          id="year"
+          maxlength="4"
+          min="1900"
+          max="3001"
+          reverse
+        />
+      </div>
+      <input
+        class="valid btn"
+        type="submit"
+        onclick="return false"
+        value="Validate"
+        id="btn"
+      />
+
+      <input class="reset" type="reset" value="Reset" />
+    </form>
+    <h3 id="result">Today's date is</h3>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
